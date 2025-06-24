@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestión de Arriendos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+      }
+      .navbar {
+        margin-bottom: 20px;
+      }
+      .container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Gestión de Arriendos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nuevo Arriendo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Devolución Vehículo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Borrar Arriendo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Arriendos Activos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Arriendos Terminados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estadísticas de Arriendos</a>
+            </li>
+            <!-- Dropdown de Usuario -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Usuario
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Opciones de Gestión de Arriendos</h2>
+          <div class="list-group mt-4">
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5 class="mb-1">1. Registrar un Nuevo Arriendo</h5>
+              <p class="mb-1">Permite al usuario ingresar un nuevo arriendo de un vehículo.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5 class="mb-1">2. Registrar Devolución de Vehículo</h5>
+              <p class="mb-1">Permite al usuario registrar la devolución de un vehículo en arriendo.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5 class="mb-1">3. Borrar un Arriendo</h5>
+              <p class="mb-1">Permite al usuario borrar un arriendo existente.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5 class="mb-1">4. Ver Arriendos Activos</h5>
+              <p class="mb-1">Muestra todos los arriendos que están actualmente activos.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5 class="mb-1">5. Ver Arriendos Terminados</h5>
+              <p class="mb-1">Muestra todos los arriendos que han sido finalizados.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5 class="mb-1">6. Ver Estadísticas de Arriendos</h5>
+              <p class="mb-1">Muestra la cantidad de arriendos realizados para cada tipo de vehículo.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
