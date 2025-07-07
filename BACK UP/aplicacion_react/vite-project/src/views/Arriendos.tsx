@@ -19,7 +19,7 @@ export default function Arriendos() {
   const [arriendos, setArriendos] = useState(arriendosIniciales);
 
   const handleEliminarArriendo = async (id: number) => {
-    // Omito confirmación pop-up según tu pedido anterior
+    
     const resultado = await arriendoBorrar(id);
 
     if (resultado.success) {

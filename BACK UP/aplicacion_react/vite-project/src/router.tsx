@@ -3,7 +3,7 @@ import Layout from "./layouts/Layout";
 import Home from "./views/Home";
 import Arriendos,{loader as loaderArriendos} from "./views/Arriendos";
 import NuevoArriendo from "./views/NuevoArriendo";
-import DevolucionArriendo from "./views/DevolucionArriendo";
+import DevolucionArriendo,{loader as loaderDevolucion} from "./views/DevolucionArriendo";
 import ActivoArriendo from "./views/ActivoArriendo";
 import TerminadoArriendo from "./views/TerminadoArriendo";
 import EstadisticaArriendo from "./views/EstadisticaArriendo";
@@ -28,7 +28,8 @@ export const router = createBrowserRouter([
             },
             {
                 path:'arriendos/devolucion',
-                element: <DevolucionArriendo/>
+                element: <DevolucionArriendo/>,
+                loader: loaderDevolucion,
             },
             {
                 path:'arriendos/activos',
@@ -42,6 +43,7 @@ export const router = createBrowserRouter([
                 path:'arriendos/estadisticas',
                 element: <EstadisticaArriendo/>
             }
+            
         ]
     }
 ])
